@@ -9,49 +9,70 @@
 </head>
 <body>
     <nav id="desktop-nav">
-        <div class="logo">Gabriel Valetti</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">Gabriel Valetti</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
-        </div>
-    </nav>
+  <div class="left-section">
+    <div class="logo">Gabriel Valetti</div>
+    <div class="language-switcher">
+      <select id="language-select">
+        <option value="en" selected>EN</option>
+        <option value="es">ES</option>
+      </select>
+    </div>
+  </div>
+
+  <div>
+    <ul class="nav-links">
+      <li><a href="#about" data-key="about">About</a></li>
+      <li><a href="#experience" data-key="experience">Experience</a></li>
+      <li><a href="#projects" data-key="projects">Projects</a></li>
+      <li><a href="#contact" data-key="contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<nav id="hamburger-nav">
+  <div class="left-section">
+    <div class="logo">Gabriel Valetti</div>
+    <div class="language-switcher">
+      <select id="language-select-mobile">
+        <option value="en" selected>EN</option>
+        <option value="es">ES</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="hamburger-menu">
+    <div class="hamburger-icon" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="menu-links">
+      <li><a href="#about" data-key="about" onclick="toggleMenu()">About</a></li>
+      <li><a href="#experience" data-key="experience" onclick="toggleMenu()">Experience</a></li>
+      <li><a href="#projects" data-key="projects" onclick="toggleMenu()">Projects</a></li>
+      <li><a href="#contact" data-key="contact" onclick="toggleMenu()">Contact</a></li>
+    </div>
+  </div>
+</nav>
     <section id="profile">
         <div class="section__pic-container">
             <img src="./assets/PerfilCircular.png" alt="Gabriel Valetti profile picture">
         </div>
         <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
+            <p class="section__text__p1" data-key="hello">Hello, I'm</p>
             <h1 class="title">Gabriel Valetti</h1>
-            <p class="section__text__p2">Frontend Developer</p>
+            <p class="section__text__p2" data-key="role">Frontend Developer</p>
             <div class="btn-container">
                 <button 
                     class="btn btn-color-2" 
                     onclick="window.open('./assets/Gabriel-Valetti.pdf')"
+                    data-key="downloadCV"
                 >Download CV
                 </button>
                 <button 
                     class="btn btn-color-1" 
                     onclick="location.href = './#contact'"
+                    data-key="contactInfo"
                 >Contact Info
                 </button>
             </div>
@@ -70,8 +91,8 @@
         </div>
     </section>
     <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
+        <p class="section__text__p1" data-key="getToKnow">Get To Know More</p>
+        <h1 class="title" data-key="aboutTitle">About Me</h1>
         <div class="section-container">
             <div class="section__pic-container">
                 <img src="./assets/PictureEdited.png" 
@@ -86,19 +107,19 @@
                             alt="Experience icon"
                             class="icon"
                         />
-                        <h3>Experience</h3>
-                        <p>2+ years <br>Frontend Development</p>
+                        <h3 data-key="experienceTitle">Experience</h3>
+                        <p data-key="experienceDesc">2+ years <br>Frontend Development</p>
                     </div>
                     <div class="details-container">
                         <img src="./assets/education.png" 
                             alt="education icon"
                             class="icon"
                         />
-                        <h3>Education</h3>
-                        <p>Computer Science Degree <br>Rellenar</p>
+                        <h3 data-key="educationTitle">Education</h3>
+                        <p data-key="educationDesc">Computer Science Degree <br>Rellenar</p>
                     </div>
                 </div>
-                <div class="text-container">
+                <div class="text-container" data-key="aboutText">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus optio et vel modi! Sapiente 
                         cumque rem adipisci. Perspiciatis officiis minima, deleniti voluptates, aliquid voluptas unde 
                         vero dignissimos id aut, repellendus mollitia nulla numquam veritatis beatae? Repellat non soluta 
@@ -114,8 +135,8 @@
         />
     </section>
     <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
+        <p class="section__text__p1" data-key="exploreMy">Explore My</p>
+        <h1 class="title" data-key="experienceMain">Experience</h1>
         <div class="experience-details-container">
             <div class="about-containers">
                 <div class="details-container">
@@ -247,8 +268,8 @@
         />
     </section>
     <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
+        <p class="section__text__p1" data-key="browseRecent">Browse My Recent</p>
+        <h1 class="title" data-key="projectsTitle">Projects</h1>
         <div class="experience-details-container">
             <div class="about-containers">
             <div class="details-container color-container">
@@ -326,8 +347,8 @@
         />
     </section>
     <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
+        <p class="section__text__p1" data-key="getInTouch">Get in Touch</p>
+        <h1 class="title" data-key="contactTitle">Contact Me</h1>
         <div class="contact-info-upper-container">
             <div class="contact-info-container">
                 <img 
@@ -335,7 +356,8 @@
                     alt="Email icon" 
                     class="icon contact-icon email-icon"
                 />
-                <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a>
+                <p>
+                    <a href="mailto:valettigabriel@gmail.com">valettigabriel@gmail.com</a>
                 </p>
             </div>
             <div class="contact-info-container">
@@ -353,14 +375,14 @@
         <nav>
             <div class="nav-links-container">
                 <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#proyect">Proyects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                   <li><a href="#about" data-key="about">About</a></li>
+                    <li><a href="#experience" data-key="experience">Experience</a></li>
+                    <li><a href="#projects" data-key="projects">Projects</a></li>
+                    <li><a href="#contact" data-key="contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
-        <p>Copyright &#169; 2025 Gabriel Valetti. All Rights Reserved.</p>
+        <p data-key="footerText">Copyright &#169; 2025 Gabriel Valetti. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
 </body>
