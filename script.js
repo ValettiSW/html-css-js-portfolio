@@ -67,7 +67,7 @@ const translations = {
     experienceDesc: "Más de 2 años <br>en Desarrollo Frontend",
     educationTitle: "Educación",
     educationDesc: "Licenciatura en Ciencias de la Computación <br>En curso",
-    aboutText: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus optio et vel modi! Sapiente cumque rem adipisci. Perspiciatis officiis minima, deleniti voluptates, aliquid voluptas unde vero dignissimos id aut, repellendus mollitia nulla numquam veritatis beatae? Repellat non soluta nisi esse modi labore corrupti explicabo. Voluptate porro eligendi quisquam maxime quod!",
+    aboutText: "Estudiante de Analista en Computación con formación en programación, bases de datos y desarrollo web. Con conocimientos en Python (básico), JavaScript, HTML y CSS (nivel intermedio inicial), uso básico de MySQL y fundamentos de desarrollo backend en lenguaje C. Perfil analítico, organizado y orientado al aprendizaje continuo. Interesado en desarrollarme en entornos tecnológicos donde pueda aplicar lógica, análisis y optimización de procesos. Alta motivación para aprender nuevas herramientas y metodologías según las necesidades del equipo.",
 
 
     // experience section
