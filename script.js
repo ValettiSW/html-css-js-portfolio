@@ -26,10 +26,10 @@ const translations = {
     getToKnow: "Get To Know More",
     aboutTitle: "About Me",
     experienceTitle: "Experience",
-    experienceDesc: "2+ years <br>Frontend Development",
+    experienceDesc: "1+ years <br>Frontend Development",
     educationTitle: "Education",
     educationDesc: "Computer Science Degree <br>To be completed",
-    aboutText: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus optio et vel modi! Sapiente cumque rem adipisci. Perspiciatis officiis minima, deleniti voluptates, aliquid voluptas unde vero dignissimos id aut, repellendus mollitia nulla numquam veritatis beatae? Repellat non soluta nisi esse modi labore corrupti explicabo. Voluptate porro eligendi quisquam maxime quod!",
+    aboutText: "Computer Systems Analyst student with training in programming, databases, and web    development. Knowledge of Python (basic), JavaScript, HTML, and CSS (early-intermediate level), basic use of MySQL, and foundational backend development in C. Analytical, organized, and committed to continuous learning. Interested in developing within technological environments where I can apply logic, data analysis, and process optimization. Highly motivated to learn new tools and methodologies according to team needs.",
 
     // experience section
     exploreMy: "Explore My",
@@ -44,7 +44,7 @@ const translations = {
     contactTitle: "Contact Me",
 
     // footer
-    footerText: "Copyright © 2025 Gabriel Valetti. All Rights Reserved.",
+    footerText: "Copyright © 2026 Gabriel Valetti. All Rights Reserved.",
   },
 
   es: {
@@ -64,7 +64,7 @@ const translations = {
     getToKnow: "Conoce más",
     aboutTitle: "Sobre mí",
     experienceTitle: "Experiencia",
-    experienceDesc: "Más de 2 años <br>en Desarrollo Frontend",
+    experienceDesc: "Más de 1 año <br>en Desarrollo Frontend",
     educationTitle: "Educación",
     educationDesc: "Licenciatura en Ciencias de la Computación <br>En curso",
     aboutText: "Estudiante de Analista en Computación con formación en programación, bases de datos y desarrollo web. Con conocimientos en Python (básico), JavaScript, HTML y CSS (nivel intermedio inicial), uso básico de MySQL y fundamentos de desarrollo backend en lenguaje C. Perfil analítico, organizado y orientado al aprendizaje continuo. Interesado en desarrollarme en entornos tecnológicos donde pueda aplicar lógica, análisis y optimización de procesos. Alta motivación para aprender nuevas herramientas y metodologías según las necesidades del equipo.",
@@ -83,7 +83,7 @@ const translations = {
     contactTitle: "Contáctame",
 
     // footer
-    footerText: "Copyright © 2025 Gabriel Valetti. Todos los derechos reservados.",
+    footerText: "Copyright © 2026 Gabriel Valetti. Todos los derechos reservados.",
   }
 };
 
