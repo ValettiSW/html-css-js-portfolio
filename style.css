@@ -361,10 +361,16 @@ section {
 
 #projects {
     position: relative;
+    height: auto;
+    min-height: 100vh;
+    padding-bottom: 6rem;
 }
 
 #devlog {
     position: relative;
+    height: auto;
+    min-height: 100vh;
+    padding-bottom: 6rem;
 }
 
 .color-container {

@@ -47,6 +47,7 @@
     "eyebrow": "Explora mis últimos",
     "title": "Proyectos",
     "projectOne": "Proyecto Uno",
+    "movieFinder": "MovieFinder",
     "github": "Github",
     "liveDemo": "Demo en vivo"
   },
@@ -93,6 +94,7 @@
     "arrow": "Icono de flecha",
     "nextSection": "Ir a la siguiente sección",
     "project": "Vista previa del proyecto uno",
+    "movieFinder": "Vista previa del proyecto MovieFinder",
     "email": "Icono de correo electrónico",
     "linkedin": "Icono de LinkedIn",
     "github": "Icono de GitHub"

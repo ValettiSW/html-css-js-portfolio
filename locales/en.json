@@ -47,6 +47,7 @@
     "eyebrow": "Browse My Recent",
     "title": "Projects",
     "projectOne": "Project One",
+    "movieFinder": "MovieFinder",
     "github": "Github",
     "liveDemo": "Live Demo"
   },
@@ -93,6 +94,7 @@
     "arrow": "Arrow icon",
     "nextSection": "Go to next section",
     "project": "Project one preview",
+    "movieFinder": "MovieFinder project preview",
     "email": "Email icon",
     "linkedin": "LinkedIn icon",
     "github": "GitHub icon"
