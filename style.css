@@ -3,6 +3,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root {
+    --text-muted: rgb(85,85,85);
+    --border-dark: rgb(53,53,53);
+    --border-light: rgb(163,163,163);
+    --surface: rgb(250,250,250);
+    --surface-raised: white;
+    --card-shadow: 0 0.5rem 1.25rem rgba(53,53,53,0.08);
+}
+
 
 * {
     margin: 0;
@@ -11,6 +20,7 @@
 
 body {
     font-family: "Poppins", sans-serif;
+    scroll-snap-type: y mandatory;
 }
 
 html {
@@ -18,7 +28,7 @@ html {
 }
 
 p {
-    color: rgb(85, 85, 85);
+    color: var(--text-muted);
 }
 
 /* TRANSITION */
@@ -136,14 +146,6 @@ a:hover{
     transform: none;
 }
 
-.hamburger-icon span:first-child {
-    opacity: 1;
-}
-
-.hamburger-icon span:first-child {
-    transform: none;
-}
-
 /* SECTIONS */
 
 section {
@@ -151,11 +153,16 @@ section {
     height: 96vh;
     margin: 0 10rem;
     box-sizing: border-box;
-    min-height: fit-content;
+    min-height: 100vh;
+    scroll-snap-align: start;
 }
 
 .section-container {
     display: flex;
+}
+
+.section-heading {
+    display: contents;
 }
 
 /* PROFILE SECTION */
@@ -220,7 +227,6 @@ section {
 
 .btn {
     font-weight: 600;
-    transition: all 300ms ease;
     padding: 1rem;
     width: 8rem;
     border-radius: 2rem;
@@ -254,10 +260,6 @@ section {
     border: rgb(255,255,255) 0,1rem solid;
 }
 
-.btn-container {
-    gap: 1rem;
-}
-
 /* ABOUT SECTION */
 
 #about {
@@ -284,31 +286,36 @@ section {
     border-radius: 2rem;
 }
 
-.arrow {
+.section-footer {
     position: absolute;
-    right: -5rem;
-    bottom: 2.5rem;
+    right: -2rem;
+    bottom: 0.75rem;
+}
+
+.arrow {
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.arrow .icon {
+    display: block;
 }
 
 .details-container {
     padding: 1.5rem;
     flex: 1;
-    background: white;
+    background: var(--surface-raised);
     border-radius: 2rem;
-    border: rgb(53,53,53) 0.1rem solid;
-    border-color: rgb(163,163,163);
+    border: var(--border-dark) 0.1rem solid;
+    border-color: var(--border-light);
     text-align: center;
 }
 
 .section-container {
     gap: 4rem;
     height: 80%;
-}
-
-.section__pic-container {
-    height: 400px;
-    width: 400px;
-    margin: auto 0;
 }
 
 /* EXPERIENCE SECTION */
@@ -339,14 +346,14 @@ section {
     justify-content: space-around;
 }
 
-article {
+.skill-item {
     display: flex;
     width: 10rem;
     justify-content: space-around;
     gap: 0.5rem;
 }
 
-article .icon {
+.skill-item .icon {
     cursor: default;
 }
 
@@ -356,9 +363,13 @@ article .icon {
     position: relative;
 }
 
+#devlog {
+    position: relative;
+}
+
 .color-container {
-    border-color: rgb(163,163,163);
-    background: rgb(250,250,250);
+    border-color: var(--border-light);
+    background: var(--surface);
 }
 
 .project-img {
@@ -375,6 +386,72 @@ article .icon {
 .project-btn {
     color: black;
     border-color: rgb(163,163,163);
+}
+
+.devlog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.devlog-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: left;
+    box-shadow: var(--card-shadow);
+}
+
+.devlog-card .experience-sub-title {
+    margin-bottom: 0;
+    font-size: 1.35rem;
+}
+
+.devlog-card p {
+    line-height: 1.6;
+}
+
+.devlog-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.devlog-card-header time {
+    color: rgb(85,85,85);
+    font-size: 0.85rem;
+    white-space: nowrap;
+}
+
+.devlog-tag {
+    color: rgb(53,53,53);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.devlog-comments {
+    margin: 2rem auto 4rem;
+    max-width: 900px;
+    box-shadow: var(--card-shadow);
+}
+
+.devlog-comments .experience-sub-title {
+    text-align: center;
+}
+
+#giscus-container {
+    max-height: 28rem;
+    min-height: 4rem;
+    overflow-y: auto;
+    padding-right: 0.5rem;
+}
+
+#giscus-container .giscus,
+#giscus-container .giscus-frame {
+    max-width: 100%;
 }
 
 /* CONTACT */
@@ -422,6 +499,11 @@ article .icon {
 footer {
     height: 26vh;
     margin: 0 1rem;
+}
+
+.section-footer {
+    height: auto;
+    margin: 0;
 }
 
 footer p {

@@ -6,6 +6,9 @@
     .about-containers {
         flex-wrap: wrap;
     }
+    .devlog-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 
@@ -22,14 +25,15 @@
     #profile, .section-container {
         display: block;
     }
-    .arrow {
-        display: none;
-    }
     section, .section-container {
         height: fit-content;
     }
     section {
         margin: 0 5%;
+    }
+    .section-footer {
+        right: -1rem;
+        bottom: 0.5rem;
     }
     .section__pic-container {
         width: 275px;
@@ -89,5 +93,9 @@
         }
         .text-container {
             text-align: justify;
+        }
+        .section-footer {
+            right: -0.5rem;
+            bottom: 0.25rem;
         }
 }

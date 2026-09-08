@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title data-i18n="hero.name">Gabriel Valetti</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
@@ -12,7 +12,7 @@
   <div class="left-section">
     <div class="logo">Gabriel Valetti</div>
     <div class="language-switcher">
-      <select id="language-select">
+    <select id="language-select" data-language-select aria-label="Language" data-i18n-attr="nav.language" data-i18n-attribute="aria-label">
         <option value="en" selected>EN</option>
         <option value="es">ES</option>
       </select>
@@ -21,10 +21,11 @@
 
   <div>
     <ul class="nav-links">
-      <li><a href="#about" data-key="about">About</a></li>
-      <li><a href="#experience" data-key="experience">Experience</a></li>
-      <li><a href="#projects" data-key="projects">Projects</a></li>
-      <li><a href="#contact" data-key="contact">Contact</a></li>
+    <li><a href="#about" data-i18n="nav.about">About</a></li>
+    <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+    <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+    <li><a href="#devlog" data-i18n="nav.devlog">Devlog</a></li>
+    <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
     </ul>
   </div>
 </nav>
@@ -33,7 +34,7 @@
   <div class="left-section">
     <div class="logo">Gabriel Valetti</div>
     <div class="language-switcher">
-      <select id="language-select-mobile">
+    <select id="language-select-mobile" data-language-select aria-label="Language" data-i18n-attr="nav.language" data-i18n-attribute="aria-label">
         <option value="en" selected>EN</option>
         <option value="es">ES</option>
       </select>
@@ -46,343 +47,362 @@
       <span></span>
       <span></span>
     </div>
-    <div class="menu-links">
-      <li><a href="#about" data-key="about" onclick="toggleMenu()">About</a></li>
-      <li><a href="#experience" data-key="experience" onclick="toggleMenu()">Experience</a></li>
-      <li><a href="#projects" data-key="projects" onclick="toggleMenu()">Projects</a></li>
-      <li><a href="#contact" data-key="contact" onclick="toggleMenu()">Contact</a></li>
-    </div>
+    <ul class="menu-links">
+    <li><a href="#about" data-i18n="nav.about" onclick="toggleMenu()">About</a></li>
+    <li><a href="#experience" data-i18n="nav.experience" onclick="toggleMenu()">Experience</a></li>
+    <li><a href="#projects" data-i18n="nav.projects" onclick="toggleMenu()">Projects</a></li>
+    <li><a href="#devlog" data-i18n="nav.devlog" onclick="toggleMenu()">Devlog</a></li>
+    <li><a href="#contact" data-i18n="nav.contact" onclick="toggleMenu()">Contact</a></li>
+    </ul>
   </div>
 </nav>
     <section id="profile">
         <div class="section__pic-container">
-            <img src="./assets/PerfilCircular.png" alt="Gabriel Valetti profile picture">
+            <img src="./assets/PerfilCircular.png" alt="Gabriel Valetti profile picture" data-i18n-attr="images.profile" data-i18n-attribute="alt">
         </div>
-        <div class="section__text">
-            <p class="section__text__p1" data-key="hello">Hello, I'm</p>
-            <h1 class="title">Gabriel Valetti</h1>
-            <p class="section__text__p2" data-key="role">Frontend Developer</p>
+        <header class="section__text">
+            <p class="section__text__p1" data-i18n="hero.greeting">Hello, I'm</p>
+            <h1 class="title" data-i18n="hero.name">Gabriel Valetti</h1>
+            <p class="section__text__p2" data-i18n="hero.role">Frontend Developer</p>
             <div class="btn-container">
                 <button 
                     class="btn btn-color-2" 
                     onclick="window.open('./assets/Gabriel_Valetti.pdf')"
-                    data-key="downloadCV"
+                    data-i18n="hero.downloadCV"
                 >Download CV
                 </button>
                 <button 
                     class="btn btn-color-1" 
                     onclick="location.href = './#contact'"
-                    data-key="contactInfo"
+                    data-i18n="hero.contactInfo"
                 >Contact Info
                 </button>
             </div>
             <div id="socials-container">
                 <img src="./assets/linkedin.png" 
                     alt="My Linkedin profile" 
+                    data-i18n-attr="images.linkedin"
+                    data-i18n-attribute="alt"
                     class="icon" 
                     onclick="location.href = 'https://linkedin.com/in/gabriel-valettisw'"
                 />
                 <img src="./assets/github.png" 
                     alt="My Github profile" 
+                    data-i18n-attr="images.github"
+                    data-i18n-attribute="alt"
                     class="icon" 
                     onclick="location.href = 'https://github.com/ValettiSW'"
                 />
             </div>
-        </div>
+        </header>
     </section>
     <section id="about">
-        <p class="section__text__p1" data-key="getToKnow">Get To Know More</p>
-        <h1 class="title" data-key="aboutTitle">About Me</h1>
+        <header class="section-heading">
+            <p class="section__text__p1" data-i18n="about.eyebrow">Get To Know More</p>
+            <h1 class="title" data-i18n="about.title">About Me</h1>
+        </header>
         <div class="section-container">
             <div class="section__pic-container">
                 <img src="./assets/PictureEdited.png" 
                     alt="Profile picture"
+                    data-i18n-attr="images.about"
+                    data-i18n-attribute="alt"
                     class="about-pic"
                 />
             </div>
             <div class="about-details-container">
                 <div class="about-containers">
-                    <div class="details-container">
+                    <article class="details-container">
                         <img src="./assets/experience.png" 
                             alt="Experience icon"
+                            data-i18n-attr="images.experience"
+                            data-i18n-attribute="alt"
                             class="icon"
                         />
-                        <h3 data-key="experienceTitle">Experience</h3>
-                        <p data-key="experienceDesc">2+ years <br>Frontend Development</p>
-                    </div>
-                    <div class="details-container">
+                        <h3 data-i18n="about.experience.title">Experience</h3>
+                        <p data-i18n="about.experience.description">2+ years <br>Frontend Development</p>
+                    </article>
+                    <article class="details-container">
                         <img src="./assets/education.png" 
                             alt="education icon"
+                            data-i18n-attr="images.education"
+                            data-i18n-attribute="alt"
                             class="icon"
                         />
-                        <h3 data-key="educationTitle">Education</h3>
-                        <p data-key="educationDesc">Computer Science Degree <br>Rellenar</p>
-                    </div>
+                        <h3 data-i18n="about.education.title">Education</h3>
+                        <p data-i18n="about.education.description">Computer Science Degree <br>To be completed</p>
+                    </article>
                 </div>
-                <div class="text-container" data-key="aboutText">
-                    <p>Computer Systems Analyst student with training in programming, databases, and web development. Knowledge of Python (basic), JavaScript, HTML, and CSS (early-intermediate level), basic use of MySQL, and foundational backend development in C.
-                    Analytical, organized, and committed to continuous learning. Interested in developing within technological environments where I can apply logic, data analysis, and process optimization. Highly motivated to learn new tools and methodologies according to team needs.
-                    </p>
+                <div class="text-container">
+                    <p data-i18n="about.bio">Computer Systems Analyst student with training in programming, databases, and web development. Knowledge of Python (basic), JavaScript, HTML, and CSS (early-intermediate level), basic use of MySQL, and foundational backend development in C. Analytical, organized, and committed to continuous learning. Interested in developing within technological environments where I can apply logic, data analysis, and process optimization. Highly motivated to learn new tools and methodologies according to team needs.</p>
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" 
-            alt="Arrow icon" 
-            class="icon arrow" 
-            onclick="location.href = './#experience'"
-        />
+        <footer class="section-footer">
+            <button class="arrow" type="button" aria-label="Go to next section" data-i18n-attr="images.nextSection" data-i18n-attribute="aria-label">
+                <img src="./assets/arrow.png"
+                    alt="Arrow icon"
+                    data-i18n-attr="images.arrow"
+                    data-i18n-attribute="alt"
+                    class="icon"
+                />
+            </button>
+        </footer>
     </section>
     <section id="experience">
-        <p class="section__text__p1" data-key="exploreMy">Explore My</p>
-        <h1 class="title" data-key="experienceMain">Experience</h1>
+        <header class="section-heading">
+            <p class="section__text__p1" data-i18n="experience.eyebrow">Explore My</p>
+            <h1 class="title" data-i18n="experience.title">Experience</h1>
+        </header>
         <div class="experience-details-container">
             <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Frontend Development</h2>
+                <article class="details-container">
+                    <h2 class="experience-sub-title" data-i18n="experience.frontend">Frontend Development</h2>
                     <div class="article-container">
-                        <article>
+                        <article class="skill-item">
                             <img 
                                 src="/assets/checkmark.png" 
                                 alt="Experience icon" 
+                                data-i18n-attr="images.experience"
+                                data-i18n-attribute="alt"
                                 class="icon"
                             />
                             <div>
-                                <h3>HTML</h3>
-                                <p>Intermediate</p>
+                                <h3 data-i18n="experience.skills.html">HTML</h3>
+                                <p data-i18n="experience.skills.intermediate">Intermediate</p>
                             </div>
                         </article>
-                        <article>
+                        <article class="skill-item">
                             <img 
                                 src="/assets/checkmark.png" 
                                 alt="Experience icon" 
+                                data-i18n-attr="images.experience"
+                                data-i18n-attribute="alt"
                                 class="icon"
                             />
                             <div>
-                                <h3>CSS</h3>
-                                <p>Intermediate</p>
+                                <h3 data-i18n="experience.skills.css">CSS</h3>
+                                <p data-i18n="experience.skills.intermediate">Intermediate</p>
                             </div>
                         </article>
-                        <article>
+                        <article class="skill-item">
                             <img 
                                 src="/assets/checkmark.png" 
                                 alt="Experience icon" 
+                                data-i18n-attr="images.experience"
+                                data-i18n-attribute="alt"
                                 class="icon"
                             />
                             <div>
-                                <h3>SASS</h3>
-                                <p>Basic</p>
+                                <h3 data-i18n="experience.skills.sass">SASS</h3>
+                                <p data-i18n="experience.skills.basic">Basic</p>
                             </div>
                         </article>
-                        <article>
+                        <article class="skill-item">
                             <img 
                                 src="/assets/checkmark.png" 
                                 alt="Experience icon" 
+                                data-i18n-attr="images.experience"
+                                data-i18n-attribute="alt"
                                 class="icon"
                             />
                             <div>
-                                <h3>JavaScript</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <!-- <article>
-                            <img 
-                                src="/assets/checkmark.png" 
-                                alt="Experience icon" 
-                                class="icon"
-                            />
-                            <div>
-                                <h3>TypeScript</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article> -->
-                        <!-- <article>
-                            <img 
-                                src="/assets/checkmark.png" 
-                                alt="Experience icon" 
-                                class="icon"
-                            />
-                            <div>
-                                <h3>Material UI</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article> -->
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Frontend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img 
-                                src="/assets/checkmark.png" 
-                                alt="Experience icon" 
-                                class="icon"
-                            />
-                            <div>
-                                <h3>MySQL</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <!-- <article>
-                            <img 
-                                src="/assets/checkmark.png" 
-                                alt="Experience icon" 
-                                class="icon"
-                            />
-                            <div>
-                                <h3>Node JS</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article> -->
-                        <!-- <article>
-                            <img 
-                                src="/assets/checkmark.png" 
-                                alt="Experience icon" 
-                                class="icon"
-                            />
-                            <div>
-                                <h3>Express JS</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article> -->
-                        <article>
-                            <img 
-                                src="/assets/checkmark.png" 
-                                alt="Experience icon" 
-                                class="icon"
-                            />
-                            <div>
-                                <h3>Git</h3>
-                                <p>Basic</p>
+                                <h3 data-i18n="experience.skills.javascript">JavaScript</h3>
+                                <p data-i18n="experience.skills.basic">Basic</p>
                             </div>
                         </article>
                     </div>
-                </div>
+                </article>
+                <article class="details-container">
+                    <h2 class="experience-sub-title" data-i18n="experience.backend">Frontend Development</h2>
+                    <div class="article-container">
+                        <article class="skill-item">
+                            <img 
+                                src="/assets/checkmark.png" 
+                                alt="Experience icon" 
+                                data-i18n-attr="images.experience"
+                                data-i18n-attribute="alt"
+                                class="icon"
+                            />
+                            <div>
+                                <h3 data-i18n="experience.skills.mysql">MySQL</h3>
+                                <p data-i18n="experience.skills.basic">Basic</p>
+                            </div>
+                        </article>
+                        <article class="skill-item">
+                            <img 
+                                src="/assets/checkmark.png" 
+                                alt="Experience icon" 
+                                data-i18n-attr="images.experience"
+                                data-i18n-attribute="alt"
+                                class="icon"
+                            />
+                            <div>
+                                <h3 data-i18n="experience.skills.git">Git</h3>
+                                <p data-i18n="experience.skills.basic">Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </article>
             </div>
         </div>
-        <img src="./assets/arrow.png" 
-            alt="Arrow icon" 
-            class="icon arrow" 
-            onclick="location.href = './#projects'"
-        />
+        <footer class="section-footer">
+            <button class="arrow" type="button" aria-label="Go to next section" data-i18n-attr="images.nextSection" data-i18n-attribute="aria-label">
+                <img src="./assets/arrow.png"
+                    alt="Arrow icon"
+                    data-i18n-attr="images.arrow"
+                    data-i18n-attribute="alt"
+                    class="icon"
+                />
+            </button>
+        </footer>
     </section>
     <section id="projects">
-        <p class="section__text__p1" data-key="browseRecent">Browse My Recent</p>
-        <h1 class="title" data-key="projectsTitle">Projects</h1>
+        <header class="section-heading">
+            <p class="section__text__p1" data-i18n="projects.eyebrow">Browse My Recent</p>
+            <h1 class="title" data-i18n="projects.title">Projects</h1>
+        </header>
         <div class="experience-details-container">
             <div class="about-containers">
-            <div class="details-container color-container">
+            <article class="details-container color-container">
                 <div class="article-container">
                     <img 
                         src="./assets/9250fd14-c054-43c1-8e37-acf6a9816906.png" 
-                        alt="project 1" 
+                        alt="Project one preview"
+                        data-i18n-attr="images.project"
+                        data-i18n-attribute="alt"
                         class="project-img"
                     />
                 </div>
-                <h2 class="experience-sub-title project-title">Project One</h2>
+                <h2 class="experience-sub-title project-title" data-i18n="projects.projectOne">Project One</h2>
                 <div class="btn-container">
                     <button 
                             class="btn btn-color-2 project-btn" 
                             onclick="location.href='https://github.com/ValettiSW/PSC_2024_GestionDeReservas_BackEnd_C.git'">
-                        Github
+                            <span data-i18n="projects.github">Github</span>
                     </button>
                     <button 
                             class="btn btn-color-2 project-btn" 
                             onclick="location.href=''">
-                        Live Demo
+                            <span data-i18n="projects.liveDemo">Live Demo</span>
                     </button>
                 </div>
+            </article>
+        </div>
+        </div>
+        <footer class="section-footer">
+            <button class="arrow" type="button" aria-label="Go to next section" data-i18n-attr="images.nextSection" data-i18n-attribute="aria-label">
+                <img src="./assets/arrow.png" alt="Arrow icon" class="icon"
+                    data-i18n-attr="images.arrow" data-i18n-attribute="alt">
+            </button>
+        </footer>
+    </section>
+    <section id="devlog">
+        <header class="section-heading">
+            <p class="section__text__p1" data-i18n="devlog.eyebrow">Notes from the build</p>
+            <h1 class="title" data-i18n="devlog.title">Devlog</h1>
+            <p class="section__text__p2 devlog-subtitle" data-i18n="devlog.subtitle">Short notes on building, learning, and refining this portfolio.</p>
+        </header>
+        <div class="devlog-grid">
+            <article class="details-container color-container devlog-card">
+                <header class="devlog-card-header">
+                    <span class="devlog-tag" data-i18n="devlog.entries.scrollSnap.tag">Frontend</span>
+                    <time datetime="2026-09-08" data-i18n="devlog.entries.scrollSnap.date">September 8, 2026</time>
+                </header>
+                <h2 class="experience-sub-title" data-i18n="devlog.entries.scrollSnap.title">Making long pages feel intentional</h2>
+                <p data-i18n="devlog.entries.scrollSnap.excerpt">A small exploration of scroll snap, section rhythm, and navigation that keeps a portfolio easy to scan.</p>
+            </article>
+            <article class="details-container color-container devlog-card">
+                <header class="devlog-card-header">
+                    <span class="devlog-tag" data-i18n="devlog.entries.i18n.tag">Architecture</span>
+                    <time datetime="2026-09-01" data-i18n="devlog.entries.i18n.date">September 1, 2026</time>
+                </header>
+                <h2 class="experience-sub-title" data-i18n="devlog.entries.i18n.title">A translation system that stays out of the way</h2>
+                <p data-i18n="devlog.entries.i18n.excerpt">Moving language content into locale files makes the interface easier to extend without duplicating page structure.</p>
+            </article>
+            <article class="details-container color-container devlog-card">
+                <header class="devlog-card-header">
+                    <span class="devlog-tag" data-i18n="devlog.entries.projects.tag">Projects</span>
+                    <time datetime="2026-08-24" data-i18n="devlog.entries.projects.date">August 24, 2026</time>
+                </header>
+                <h2 class="experience-sub-title" data-i18n="devlog.entries.projects.title">Turning a project into a story</h2>
+                <p data-i18n="devlog.entries.projects.excerpt">What I learned while shaping project details into a clearer path from problem to implementation.</p>
+            </article>
+        </div>
+        <aside class="devlog-comments details-container color-container">
+            <h2 class="experience-sub-title" data-i18n="devlog.comments">Join the conversation</h2>
+            <div id="giscus-container">
+                <script id="giscus-script" src="https://giscus.app/client.js"
+                    data-repo="ValettiSW/html-css-js-portfolio"
+                    data-repo-id="R_kgDOQGGIxw"
+                    data-category="Devlog"
+                    data-category-id="DIC_kwDOQGGIx84DFJ7k"
+                    data-mapping="pathname"
+                    data-strict="0"
+                    data-reactions-enabled="1"
+                    data-emit-metadata="0"
+                    data-input-position="bottom"
+                    data-theme="preferred_color_scheme"
+                    data-lang="en"
+                    crossorigin="anonymous"
+                    async>
+                </script>
             </div>
-            <!-- <div class="details-container color-container">
-                <div class="article-container">
-                    <img 
-                        src="./assets/project-2.png" 
-                        alt="project 2" 
-                        class="project-img"
-                    />
-                </div>
-                <h2 class="experience-sub-title project-title">Project Two</h2>
-                <div class="btn-container">
-                    <button 
-                            class="btn btn-color-2 project-btn" 
-                            onclick="location.href='https://github.com'">
-                        Github
-                    </button>
-                    <button 
-                            class="btn btn-color-2 project-btn" 
-                            onclick="location.href='https://github.com'">
-                        Live Demo
-                    </button>
-                </div>
-            </div> -->
-            <!-- <div class="details-container color-container">
-                <div class="article-container">
-                    <img 
-                        src="./assets/project-3.png" 
-                        alt="project 3" 
-                        class="project-img"
-                    />
-                </div>
-                <h2 class="experience-sub-title project-title">Project Three</h2>
-                <div class="btn-container">
-                    <button 
-                            class="btn btn-color-2 project-btn" 
-                            onclick="location.href='https://github.com'">
-                        Github
-                    </button>
-                    <button 
-                            class="btn btn-color-2 project-btn" 
-                            onclick="location.href='https://github.com'">
-                        Live Demo
-                    </button>
-                </div>
-            </div> -->
-        </div>
-        </div>
-        <img src="./assets/arrow.png" 
-            alt="Arrow icon" 
-            class="icon arrow" 
-            onclick="location.href = './#contact'"
-        />
+        </aside>
+        <footer class="section-footer">
+            <button class="arrow" type="button" aria-label="Go to next section" data-i18n-attr="images.nextSection" data-i18n-attribute="aria-label">
+                <img src="./assets/arrow.png" alt="Arrow icon" class="icon"
+                    data-i18n-attr="images.arrow" data-i18n-attribute="alt">
+            </button>
+        </footer>
     </section>
     <section id="contact">
-        <p class="section__text__p1" data-key="getInTouch">Get in Touch</p>
-        <h1 class="title" data-key="contactTitle">Contact Me</h1>
+        <header class="section-heading">
+            <p class="section__text__p1" data-i18n="contact.eyebrow">Get in Touch</p>
+            <h1 class="title" data-i18n="contact.title">Contact Me</h1>
+        </header>
         <div class="contact-info-upper-container">
-            <div class="contact-info-container">
+            <article class="contact-info-container">
                 <img 
                     src="./assets/email.png" 
-                    alt="Email icon" 
+                    alt="Email icon"
+                    data-i18n-attr="images.email"
+                    data-i18n-attribute="alt"
                     class="icon contact-icon email-icon"
                 />
                 <p>
-                    <a href="mailto:valetti@gmail.com">Gabriel Valetti</a>
+                    <a href="mailto:valetti@gmail.com" data-i18n="contact.name">Gabriel Valetti</a>
                 </p>
-            </div>
-            <div class="contact-info-container">
+            </article>
+            <article class="contact-info-container">
                 <img 
                     src="./assets/linkedin.png" 
-                    alt="LinkedIn icon" 
+                    alt="LinkedIn icon"
+                    data-i18n-attr="images.linkedin"
+                    data-i18n-attribute="alt"
                     class="icon contact-icon"
                 />
                 <p>
-                <a href="https://www.linkedin.com/in/gabriel-valettisw">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/gabriel-valettisw" data-i18n="contact.linkedin">LinkedIn</a>
                 </p>
-            </div>
+            </article>
         </div>
     </section>
     <footer>
         <nav>
             <div class="nav-links-container">
                 <ul class="nav-links">
-                   <li><a href="#about" data-key="about">About</a></li>
-                    <li><a href="#experience" data-key="experience">Experience</a></li>
-                    <li><a href="#projects" data-key="projects">Projects</a></li>
-                    <li><a href="#contact" data-key="contact">Contact</a></li>
+                   <li><a href="#about" data-i18n="nav.about">About</a></li>
+                    <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+                    <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+                    <li><a href="#devlog" data-i18n="nav.devlog">Devlog</a></li>
+                    <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
-        <p data-key="footerText">Copyright &#169; 2026 Gabriel Valetti. All Rights Reserved.</p>
+        <p data-i18n="footer.copyright">Copyright © 2026 Gabriel Valetti. All Rights Reserved.</p>
     </footer>
+    <script type="module" src="i18n.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,100 @@
+{
+  "nav": {
+    "about": "Sobre mí",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "devlog": "Bitácora",
+    "contact": "Contacto",
+    "language": "Idioma"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "name": "Gabriel Valetti",
+    "role": "Desarrollador Frontend",
+    "downloadCV": "Descargar CV",
+    "contactInfo": "Información de contacto"
+  },
+  "about": {
+    "eyebrow": "Conoce más",
+    "title": "Sobre mí",
+    "experience": {
+      "title": "Experiencia",
+      "description": "Más de 2 años <br>en Desarrollo Frontend"
+    },
+    "education": {
+      "title": "Educación",
+      "description": "Licenciatura en Ciencias de la Computación <br>En curso"
+    },
+    "bio": "Estudiante de Analista en Computación con formación en programación, bases de datos y desarrollo web. Con conocimientos en Python (básico), JavaScript, HTML y CSS (nivel intermedio inicial), uso básico de MySQL y fundamentos de desarrollo backend en lenguaje C. Perfil analítico, organizado y orientado al aprendizaje continuo. Interesado en desarrollarme en entornos tecnológicos donde pueda aplicar lógica, análisis y optimización de procesos. Alta motivación para aprender nuevas herramientas y metodologías según las necesidades del equipo."
+  },
+  "experience": {
+    "eyebrow": "Explora mi",
+    "title": "Experiencia",
+    "frontend": "Desarrollo Frontend",
+    "backend": "Desarrollo Frontend",
+    "skills": {
+      "html": "HTML",
+      "css": "CSS",
+      "sass": "SASS",
+      "javascript": "JavaScript",
+      "mysql": "MySQL",
+      "git": "Git",
+      "intermediate": "Intermedio",
+      "basic": "Básico"
+    }
+  },
+  "projects": {
+    "eyebrow": "Explora mis últimos",
+    "title": "Proyectos",
+    "projectOne": "Proyecto Uno",
+    "github": "Github",
+    "liveDemo": "Demo en vivo"
+  },
+  "devlog": {
+    "eyebrow": "Notas del proceso",
+    "title": "Bitácora",
+    "subtitle": "Notas breves sobre construir, aprender y mejorar este portfolio.",
+    "comments": "Únete a la conversación",
+    "entries": {
+      "scrollSnap": {
+        "tag": "Frontend",
+        "date": "8 de septiembre de 2026",
+        "title": "Cómo dar intención a las páginas largas",
+        "excerpt": "Una breve exploración sobre scroll snap, ritmo entre secciones y navegación para mantener un portfolio fácil de recorrer."
+      },
+      "i18n": {
+        "tag": "Arquitectura",
+        "date": "1 de septiembre de 2026",
+        "title": "Un sistema de traducción que no interrumpe",
+        "excerpt": "Separar el contenido por idioma en archivos locale permite extender la interfaz sin duplicar la estructura de la página."
+      },
+      "projects": {
+        "tag": "Proyectos",
+        "date": "24 de agosto de 2026",
+        "title": "Convertir un proyecto en una historia",
+        "excerpt": "Lo que aprendí al transformar los detalles de un proyecto en un recorrido más claro desde el problema hasta la implementación."
+      }
+    }
+  },
+  "contact": {
+    "eyebrow": "Ponte en contacto",
+    "title": "Contáctame",
+    "name": "Gabriel Valetti",
+    "linkedin": "LinkedIn"
+  },
+  "footer": {
+    "copyright": "Copyright © 2026 Gabriel Valetti. Todos los derechos reservados."
+  },
+  "images": {
+    "profile": "Foto de perfil de Gabriel Valetti",
+    "about": "Foto de perfil",
+    "experience": "Icono de experiencia",
+    "education": "Icono de educación",
+    "arrow": "Icono de flecha",
+    "nextSection": "Ir a la siguiente sección",
+    "project": "Vista previa del proyecto uno",
+    "email": "Icono de correo electrónico",
+    "linkedin": "Icono de LinkedIn",
+    "github": "Icono de GitHub"
+  }
+}
